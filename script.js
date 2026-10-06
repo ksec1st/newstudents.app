@@ -1,5 +1,5 @@
 const GAS_URL =
-  "ここにGoogle Apps ScriptのURLを貼る";
+  "https://script.google.com/macros/s/AKfycbwKlcffMWMMZCUVx_nKkOmAG4aH6T3U1xBGVb_IOCqPzLQ1soiR1ZglCyxJxplyX-WnYQ/exec";
 
 
 const form =
