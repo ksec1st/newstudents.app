@@ -1,167 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>eスポーツ部｜体験部活受付</title>
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>部活動体験｜KSEC 1st</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<main class="container"><section class="card"><div class="header">
+<div class="icon">🎮</div><h1>ESPORTS CLUB</h1><p>新入生体験部活動受付</p></div>
+<form id="receptionForm">
+<!-- クラス -->
+<div class="form-group"><label for="className">Class</label><select id="className" required>
+<option value="">クラスを選択してください</option>
+<option value="自己創造1-1">自己創造1年1組</option>
+<option value="自己創造1-2">自己創造1年2組</option>
+<option value="自己創造1-3">自己創造1年3組</option>
+<option value="自己創造1-4">自己創造1年4組</option>
+<option value="自己創造1-5">自己創造1年5組</option>
 
-  <main class="container">
+<option value="FA1-1">FA 1年1組</option>
+<option value="FA1-2">FA 1年2組</option>
+<option value="FA1-3">FA 1年3組</option>
 
-    <section class="card">
+<option value="自己創造2年">自己創造2年</option>
+<option value="自己創造3年">自己創造3年</option>
+<option value="グローカル共生">グローカル共生</option>
+<option value="看護科">看護科</option>
 
-      <div class="header">
-        <div class="icon">🎮</div>
+</select></div>
 
-        <h1>eスポーツ部</h1>
+<!-- 名前 -->
+<div class="form-group"><label for="studentName">Name</label>
+<input type="text" id="studentName" placeholder="名前を入力してください" autocomplete="off" required></div>
+<!-- 体験回数 -->
+<div class="form-group"><label>体験回数</label><div class="experience-buttons">
+<button type="button" class="experience-btn" data-count="1回目">1回目</button>
+<button type="button" class="experience-btn" data-count="2回目">2回目</button>
+<button type="button" class="experience-btn" data-count="3回目">3回目</button>
+<button type="button" class="experience-btn" data-count="4回目">4回目</button>
+<button type="button" class="experience-btn" data-count="5回目">5回目</button>
+<button type="button" class="experience-btn" data-count="6回目">6回目以上</button>
 
-        <p>体験部活受付</p>
-      </div>
-
-
-      <form id="receptionForm">
-
-        <!-- クラス -->
-        <div class="form-group">
-
-          <label for="className">
-            クラス
-          </label>
-
-          <select id="className" required>
-
-            <option value="">
-              クラスを選択してください
-            </option>
-
-            <option value="1年A組">1年A組</option>
-            <option value="1年B組">1年B組</option>
-            <option value="1年C組">1年C組</option>
-            <option value="1年D組">1年D組</option>
-
-            <option value="2年A組">2年A組</option>
-            <option value="2年B組">2年B組</option>
-            <option value="2年C組">2年C組</option>
-            <option value="2年D組">2年D組</option>
-
-            <option value="3年A組">3年A組</option>
-            <option value="3年B組">3年B組</option>
-            <option value="3年C組">3年C組</option>
-            <option value="3年D組">3年D組</option>
-
-          </select>
-
-        </div>
-
-
-        <!-- 名前 -->
-        <div class="form-group">
-
-          <label for="studentName">
-            名前
-          </label>
-
-          <input
-            type="text"
-            id="studentName"
-            placeholder="名前を入力してください"
-            autocomplete="off"
-            required
-          >
-
-        </div>
-
-
-        <!-- 体験回数 -->
-        <div class="form-group">
-
-          <label>
-            体験回数
-          </label>
-
-          <div class="experience-buttons">
-
-            <button
-              type="button"
-              class="experience-btn"
-              data-count="1回目"
-            >
-              1回目
-            </button>
-
-            <button
-              type="button"
-              class="experience-btn"
-              data-count="2回目"
-            >
-              2回目
-            </button>
-
-            <button
-              type="button"
-              class="experience-btn"
-              data-count="3回目"
-            >
-              3回目
-            </button>
-
-            <button
-              type="button"
-              class="experience-btn"
-              data-count="4回目"
-            >
-              4回目
-            </button>
-
-            <button
-              type="button"
-              class="experience-btn"
-              data-count="5回目"
-            >
-              5回目
-            </button>
-
-          </div>
-
-          <input
-            type="hidden"
-            id="experienceCount"
-            required
-          >
-
-        </div>
-
-
-        <!-- 受付ボタン -->
-        <button
-          type="submit"
-          id="submitButton"
-          class="submit-button"
-        >
-          受付を完了する
-        </button>
-
-      </form>
-
-
-      <!-- メッセージ -->
-      <div
-        id="message"
-        class="message"
-      ></div>
-
-    </section>
-
-  </main>
+</div><input type="hidden" id="experienceCount" required></div>
+<!-- 受付ボタン -->
+<button type="submit" id="submitButton" class="submit-button">受付を完了する</button>
+</form>
+<!-- メッセージ -->
+<div id="message" class="message"></div>
+</section></main>
 
   <script src="script.js"></script>
 
