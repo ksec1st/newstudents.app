@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>eスポーツ部｜体験部活受付</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <section class="card">
+
+      <div class="header">
+        <div class="icon">🎮</div>
+
+        <h1>eスポーツ部</h1>
+
+        <p>体験部活受付</p>
+      </div>
+
+
+      <form id="receptionForm">
+
+        <!-- クラス -->
+        <div class="form-group">
+
+          <label for="className">
+            クラス
+          </label>
+
+          <select id="className" required>
+
+            <option value="">
+              クラスを選択してください
+            </option>
+
+            <option value="1年A組">1年A組</option>
+            <option value="1年B組">1年B組</option>
+            <option value="1年C組">1年C組</option>
+            <option value="1年D組">1年D組</option>
+
+            <option value="2年A組">2年A組</option>
+            <option value="2年B組">2年B組</option>
+            <option value="2年C組">2年C組</option>
+            <option value="2年D組">2年D組</option>
+
+            <option value="3年A組">3年A組</option>
+            <option value="3年B組">3年B組</option>
+            <option value="3年C組">3年C組</option>
+            <option value="3年D組">3年D組</option>
+
+          </select>
+
+        </div>
+
+
+        <!-- 名前 -->
+        <div class="form-group">
+
+          <label for="studentName">
+            名前
+          </label>
+
+          <input
+            type="text"
+            id="studentName"
+            placeholder="名前を入力してください"
+            autocomplete="off"
+            required
+          >
+
+        </div>
+
+
+        <!-- 体験回数 -->
+        <div class="form-group">
+
+          <label>
+            体験回数
+          </label>
+
+          <div class="experience-buttons">
+
+            <button
+              type="button"
+              class="experience-btn"
+              data-count="1回目"
+            >
+              1回目
+            </button>
+
+            <button
+              type="button"
+              class="experience-btn"
+              data-count="2回目"
+            >
+              2回目
+            </button>
+
+            <button
+              type="button"
+              class="experience-btn"
+              data-count="3回目"
+            >
+              3回目
+            </button>
+
+            <button
+              type="button"
+              class="experience-btn"
+              data-count="4回目"
+            >
+              4回目
+            </button>
+
+            <button
+              type="button"
+              class="experience-btn"
+              data-count="5回目"
+            >
+              5回目
+            </button>
+
+          </div>
+
+          <input
+            type="hidden"
+            id="experienceCount"
+            required
+          >
+
+        </div>
+
+
+        <!-- 受付ボタン -->
+        <button
+          type="submit"
+          id="submitButton"
+          class="submit-button"
+        >
+          受付を完了する
+        </button>
+
+      </form>
+
+
+      <!-- メッセージ -->
+      <div
+        id="message"
+        class="message"
+      ></div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
