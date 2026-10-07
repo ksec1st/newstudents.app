@@ -113,7 +113,7 @@ form.addEventListener("submit", async (event) => {
     if (result.status === "success") {
 
       showMessage(
-        "受付が完了しました！",
+        "受付完了 部活動体験をお楽しみください！",
         "success"
       );
 
