@@ -36,15 +36,15 @@
 <div class="form-group"><label for="studentName">Name</label>
 <input type="text" id="studentName" placeholder="名前を入力してください" autocomplete="off" required></div>
 <!-- 体験回数 -->
-<div class="form-group"><label>体験回数</label><div class="experience-buttons">
-<button type="button" class="experience-btn" data-count="1回目">1回目</button>
-<button type="button" class="experience-btn" data-count="2回目">2回目</button>
-<button type="button" class="experience-btn" data-count="3回目">3回目</button>
-<button type="button" class="experience-btn" data-count="4回目">4回目</button>
-<button type="button" class="experience-btn" data-count="5回目">5回目</button>
-<button type="button" class="experience-btn" data-count="6回目">6回目以上</button>
-
-</div><input type="hidden" id="experienceCount" required></div>
+<div class="form-group"><label for="experienceCount">体験回数</label><select id="experienceCount" required>
+<option value="">体験回数を選択してください</option>
+<option value="1回目">1回目</option>
+<option value="2回目">2回目</option>
+<option value="3回目">3回目</option>
+<option value="4回目">4回目</option>
+<option value="5回目">5回目</option>
+<option value="6回目以上">6回目以上</option>
+</select></div>
 <!-- 受付ボタン -->
 <button type="submit" id="submitButton" class="submit-button">受付を完了する</button>
 </form>
